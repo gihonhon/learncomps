@@ -4,6 +4,9 @@ import Navbar from './components/Navbar';
 import Home from './pages/Home';
 import ReactTilt from './pages/ReactTilt';
 import BatteryStatus from './pages/BatteryStatus';
+import SignInteract from './pages/SignInteract';
+import TypedAnimation from './pages/TypedAnimation';
+
 
 function App() {
   return (
@@ -13,6 +16,8 @@ function App() {
         <Route path='/' element={<Home/>}/>
         <Route path='/batterystatus' element={<BatteryStatus/>}/>
         <Route path='/reacttilt' element={<ReactTilt/>}/>
+        <Route path='/signinteraact' element={<SignInteract/>}/>
+        <Route path='/typedanim' element={<TypedAnimation/>}/>
       </Routes>
     </div>
   );

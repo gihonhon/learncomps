@@ -27,13 +27,13 @@ const customOptions = {
 }
 
 
-const TiltButton = ({ image, tittle, path }) => {
+const TiltButton = ({ imageUrl, tittle, path }) => {
   const navigate = useNavigate();
     return (
     <Tilt options={customOptions}>
         <div className='relative w-64 h-80 bg-white bg-opacity-20 backdrop-filter backdrop-blur-lg shadow-md rounded-xl overflow-hidden'>
             <img
-            src={image}
+            src={`https://i.pinimg.com/${imageUrl}`}
             alt=''
             className='w-full h-48 object-cover'
             />
